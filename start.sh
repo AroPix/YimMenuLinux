@@ -1,5 +1,14 @@
 #!/bin/bash
 
+proton() {
+    echo "Proton logic!"
+}
+
+wine() {
+    echo "Wine logic!"
+}
+
+
 # URL of the DLL
 url="https://github.com/YimMenu/YimMenu/releases/download/nightly/YimMenu.dll"
 
