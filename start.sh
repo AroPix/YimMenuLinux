@@ -26,10 +26,10 @@ fi
 
 # Check if GAME_TYPE environment variable is set
 if [ "$GAME_TYPE" == "proton" ]; then
-    download_proton
+    proton
     exit 0
 elif [ "$GAME_TYPE" == "wine" ]; then
-    download_wine
+    wine
     exit 0
 fi
 
