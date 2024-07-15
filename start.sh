@@ -55,6 +55,8 @@ install() {
 launch_steam() {
   if [ "$LAUNCH_STEAM" == 1 ]; then
     steam steam://rungameid/271590
+  elif [ "$LAUNCH_STEAM" == 0 ]; then
+    exit 1
   else
     read -p "Do you want to launch the game on Steam now? (y/n): " choice
 
