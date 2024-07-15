@@ -125,7 +125,7 @@ fi
 # Selector logic if GAME_TYPE is not set
 echo "Please select the game type:"
 echo "1. Proton (Steam)"
-echo "2. Wine (Rockstar Games, Epic Games"
+echo "2. Wine (Rockstar Games, Epic Games)"
 read -p "Enter your choice (1 or 2): " choice
 
 case $choice in
