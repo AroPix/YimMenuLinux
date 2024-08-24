@@ -16,13 +16,14 @@ If you want to override this, set the environment variable WINE_GTA_PATH to the 
 
 # Env Variables
 
-| ENV Variable      | Description                                                  | Example              |
-|-------------------|--------------------------------------------------------------|----------------------|
-| WINE_GTA_PATH     | The path to the game folder, containing the games executable | ./Grand Theft Auto V |
-| GAME_TYPE         | Sets the type for the type of game installation              | "wine" or "proton"   |
-| LAUNCH_STEAM      | Launches the game after running the script                   | 1 for yes            |
-| SKIP_DOWNLOAD_YIM | Skips the download from Github                               | 1 for skip           |
-| SKIP_DOWNLOAD_ASI | Skips the download from Github                               | 1 for skip           |
+| ENV Variable      | Description                                                  | Example                                            |
+|-------------------|--------------------------------------------------------------|----------------------------------------------------|
+| WINE_GTA_PATH     | The path to the game folder, containing the games executable | ./Grand Theft Auto V                               |
+| GAME_TYPE         | Sets the type for the type of game installation              | "wine" or "proton"                                 |
+| LAUNCH_STEAM      | Launches the game after running the script                   | 1 for yes                                          |
+| SKIP_DOWNLOAD_YIM | Skips the download from Github                               | 1 for skip                                         |
+| SKIP_DOWNLOAD_ASI | Skips the download from Github                               | 1 for skip                                         |
+| UPDATE_MENUS      | Downloads Extras Menu and Ultimate Menu                      | 1 to Update else scripts get removed (to be fixed) |
 
 ## A good example for Steam would be:
 `GAME_TYPE=proton LAUNCH_STEAM=1 ./start.sh`

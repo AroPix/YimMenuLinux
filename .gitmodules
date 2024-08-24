@@ -1,0 +1,6 @@
+[submodule "Extras-Addon-for-YimMenu"]
+	path = Extras-Addon-for-YimMenu
+	url = https://github.com/Deadlineem/Extras-Addon-for-YimMenu.git
+[submodule "UltimateMenu"]
+	path = UltimateMenu
+	url = https://github.com/UltimateMenu/UltimateMenu.git

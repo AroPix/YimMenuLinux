@@ -1,8 +1,19 @@
 #!/bin/bash
 
+SCRIPTS_DIR="${HOME}/.local/share/Steam/steamapps/compatdata/271590/pfx/drive_c/users/steamuser/Application Data/YimMenu/scripts/"
+
 proton() {
     winePath="$HOME/.local/share/Steam/steamapps/common/Grand Theft Auto V/"
+    if [ "$UPDATE_MENUS" == 1 ]; then
+      git pull --recurse-submodules
+      copy_ultimate_menu
+      copy_extras_menu
+    else
+      find "$SCRIPTS_DIR" -name "*.lua" -type f -exec rm -f {} \;
+    fi
     install
+
+
 }
 
 wine() {
@@ -71,6 +82,16 @@ launch_steam() {
             ;;
     esac
   fi
+}
+
+copy_extras_menu() {
+  SOURCE_DIR="Extras-Addon-for-YimMenu"
+  find "$SOURCE_DIR" -name "*.lua" -exec bash -c 'cp -n "$0" "$1"' {} "$SCRIPTS_DIR" \;
+}
+
+copy_ultimate_menu() {
+  SOURCE_DIR="UltimateMenu/YimMenu"
+  find "$SOURCE_DIR" -name "*.lua" -exec bash -c 'cp -n "$0" "$1"' {} "$SCRIPTS_DIR" \;
 }
 
 
